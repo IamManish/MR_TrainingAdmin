@@ -1,23 +1,87 @@
 <?xml version="1.0"?>
-	<config>
-		<acl>
-			<resources>
-				<admin>
-					<children>
-						<system>
-							<children>
-								<config>
-									<children>
-										<admin translate="title" module="trainingadmin">
-											<title>Training Admin Section</title>
-											<sort_order>0</sort_order>
-										</admin>
-									</children>
-								</config>
-							</children>
-						</system>
-					</children>
-				</admin>
-			</resources>
-		</acl>
-	</config>
+<config>
+    <menu>
+        <trainingadmin module="trainingadmin">
+            <title>Training Admin</title>
+            <sort_order>100</sort_order>
+            <children>
+                
+                <trainingadminbackend module="trainingadmin">
+                    <title>Adminhtml Training Page</title>
+                    <sort_order>0</sort_order>
+                    <action>trainingadmin/adminhtml_trainingadminbackend</action>
+                </trainingadminbackend>
+            </children>
+        </trainingadmin>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <trainingadmin>
+                        <title>Admin Training</title>
+                        <children>
+                            <trainingadminbackend>
+                                <title>Admin Backend Page</title>
+                            </trainingadminbackend>
+                        </children>
+                    </trainingadmin>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <training translate="title" module="trainingadmin">
+                                        <title>Training Admin Section</title>
+                                        <sort_order>0</sort_order>
+                                    </training>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!--
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <admin translate="title" module="trainingadmin">
+                                        <title>Training Admin Section</title>
+                                        <sort_order>0</sort_order>
+                                    </admin>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+    -->
+</config>

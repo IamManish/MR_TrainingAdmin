@@ -1,30 +1,31 @@
 <?xml version="1.0"?>
 <config>
-	  <tabs>
-		<training translate="label" module="trainingadmin">
+    <tabs>
+        <training translate="label" module="trainingadmin">
             <label>Training Admin</label>
             <sort_order>0</sort_order>
         </training>
-	  </tabs>
-	  <sections>
-		<admin  translate="label" module="trainingadmin">                    
-		<label>Training Admin</label>
-		<tab>training</tab>
-		<frontend_type>text</frontend_type>
-		<sort_order>0</sort_order>
-		<show_in_default>1</show_in_default>
-		<show_in_website>1</show_in_website>
-		<show_in_store>1</show_in_store>            
-					<groups>
-				      <setting translate="label"> 
-					  <label>Setting</label>
-					  <frontend_type>text</frontend_type>
-					  <sort_order>0</sort_order>
-					  <show_in_default>1</show_in_default>
-					  <show_in_website>1</show_in_website>
-					  <show_in_store>1</show_in_store>
-				       <fields>
-                          <enabled translate="label">
+        
+    </tabs>
+    <sections>
+        <training  translate="label" module="trainingadmin">                    
+            <label>Training Admin</label>
+            <tab>training</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>0</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>            
+            <groups>
+                <setting translate="label"> 
+                    <label>Setting</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>0</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled translate="label">
                             <label>Is Enabled</label>
                             <frontend_type>multiselect</frontend_type>
                             <source_model>adminhtml/system_config_source_yesno</source_model>
@@ -32,19 +33,19 @@
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                          </enabled>
-                          <key translate="label">
+                        </enabled>
+                        <key translate="label">
                             <label>Key</label>
-							<frontend_type>text</frontend_type>
+                            <frontend_type>text</frontend_type>
                             <sort_order>0</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-							<comment>Specified Key</comment>
-                          </key>
-					   </fields>
-					   </setting>
-					</groups>
-		</admin>
-	  </sections>
+                            <comment>Here you should Specify recieved Key</comment>
+                        </key>
+                    </fields>
+                </setting>
+            </groups>
+        </training>
+    </sections>
 </config>
