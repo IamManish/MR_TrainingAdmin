@@ -5,9 +5,10 @@
 	  <block type="trainingadmin/adminhtml_trainingadminbackend" name="trainingadminbackend" template="trainingadmin/trainingadminbackend.phtml"/>
 	</reference>
   </trainingadmin_adminhtml_trainingadminbackend_index>
+  
   <trainingadmin_adminhtml_customcontact_index>
 	<reference name="content">
-	  <block type="trainingadmin/adminhtml_customcontact" name="customcontact" />
+            <block type="trainingadmin/adminhtml_customcontact" name="customcontact" />
 	</reference>
   </trainingadmin_adminhtml_customcontact_index>
 </layout>

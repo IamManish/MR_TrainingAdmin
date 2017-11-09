@@ -5,7 +5,11 @@
             <title>Training Admin</title>
             <sort_order>100</sort_order>
             <children>
-                
+                <enquiry>
+                    <title>Enquiry</title>
+                    <sort_order>10</sort_order>
+                    <action>trainingadmin/adminhtml_customcontact</action>
+                </enquiry>
                 <trainingadminbackend module="trainingadmin">
                     <title>Adminhtml Training Page</title>
                     <sort_order>0</sort_order>
@@ -24,8 +28,13 @@
                             <trainingadminbackend>
                                 <title>Admin Backend Page</title>
                             </trainingadminbackend>
+                            <enquiry>
+                                <title>Enquiry</title>
+                                <sort_order>10</sort_order>
+                            </enquiry>
                         </children>
                     </trainingadmin>
+                    
                     <system>
                         <children>
                             <config>
